@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f0f2f5;
+  color: #1c1e21;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.container {
+  background-color: #f0f2f5;
+}
+.left__side {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+}
+
+.img {
+  height: 106px;
+}
+
+.img__fb {
+  position: absolute;
+  left: -30px;
+}
+
+.fb_lines {
+  font-size: 24px;
+  line-height: 28px;
+  width: auto;
+  font-weight: 600;
+  color: #1c1e21;
+}
+
+.right__side {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+}
+
+.login__container {
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  box-sizing: border-box;
+  margin: 40px 0 0;
+  padding: 28px 0 35px;
+  width: 396px;
+  height: 45vh;
+}
+
+.input {
+  height: 6vh;
+  padding: 14px 16px;
+  width: 340px;
+  margin: 10px 25px 10px;
+  border: 1px solid #dddfe2;
+  border-radius: 8px;
+  font: bold;
+  word-spacing: 0.4px;
+  font-size: 20px;
+  background-color: #fff;
+  color: #4b4b4b;
+}
+
+.btn__login {
+  background-color: dodgerblue;
+  color: #fff;
+  font: bold;
+  font-size: 20px;
+}
+
+.fp {
+  color: dodgerblue;
+  text-align: center;
+  margin: 10px 25px 10px;
+}
+
+.line {
+  width: 340px;
+  margin: 10px 25px 10px;
+  border: 0.5px solid lightgray;
+  border-bottom: none;
+  border-radius: 8px;
+}
+
+.btn__createaccount {
+  background-color: #00a400;
+  padding: 16px;
+  color: #fff;
+  border: #00a400;
+  border-radius: 8px;
+  text-align: center;
+  font: bold;
+  font-size: 20px;
+  margin: 10px 85px 10px;
+}
+
+.createpage {
+  text-align: center;
+  font-size: 16px;
+  color: inherit;
+  margin: 25px 15px 0;
+}
+a {
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #ffffff;
+  }
+  .left__side {
+    position: absolute;
+    top: 5%;
+    left: 40%;
+  }
+
+  .img {
+    width: 112px;
+    position: relative;
+    top: 5%;
+    left: -25%;
+  }
+
+  .fb_lines {
+    display: none;
+  }
+
+  .right__side {
+    position: absolute;
+    bottom: 10%;
+    left: 2%;
+  }
+
+  .login__container {
+    border-radius: none;
+    box-shadow: none;
+    position: relative;
+    left: -2%;
+    right: 2%;
+  }
+  .fp {
+    text-align: center;
+    position: relative;
+    left: -2%;
+    margin: 15px;
+  }
+  .line {
+    border: 0.5px solid gray;
+  }
+  .input {
+    background-color: #f5f6f7;
+    cursor: default;
+    padding: initial;
+    border: initial;
+    border-radius: 4px;
+    padding: 12px;
+    box-sizing: border-box;
+    font-size: 14px;
+    word-spacing: 0.4px;
+  }
+
+  .btn__login {
+    height: 40px;
+    background-color: dodgerblue;
+    padding: 0 14px;
+    font-size: 17px;
+  }
+
+  .createpage {
+    display: none;
+  }
+
+  .btn__createaccount {
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 6px 18px;
+    position: relative;
+    left: 4%;
+  }
+}
