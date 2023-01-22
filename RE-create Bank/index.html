@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank</title>
+    <link rel="shortcut icon" href="img/AK-favicon1.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font-family: "Poppins", sans-serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- javascript file -->
+    <script defer src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- TOP NAVIGATION -->
+      <nav class="nav">
+        <div class="logo">
+          <img src="img/logo.png" alt="Logo" class="logo" />
+        </div>
+
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a href="#sec1" class="nav__link">Features</a>
+          </li>
+          <li class="nav__item">
+            <a href="#sec2" class="nav__link">Operations</a>
+          </li>
+          <li class="nav__item">
+            <a href="#sec3" class="nav__link">Testimonials</a>
+          </li>
+          <li class="nav__item">
+            <button class="nav__link btn btn--login-model">Login</button>
+          </li>
+          <li class="nav__item">
+            <button class="nav__link btn btn--show-modal">Open account</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- login-container -->
+
+      <section class="login-container modal hidden">
+        <button class="btn--close-modal btn-close">&times;</button>
+        <div class="login-form">
+          <form action="#">
+            <input
+              autofocus
+              type="text"
+              placeholder="User name"
+              class="input input-user"
+            />
+            <input
+              type="password"
+              placeholder="Pin"
+              class="input input-password"
+            />
+            <input type="submit" value="Submit" class="input btn-input btn" />
+          </form>
+          <h2 class="forgot-password">Forgot password?</h2>
+        </div>
+      </section>
+
+      <!-- open account -->
+      <section class="open--account-container modal hidden">
+        <button class="btn--closeAc-modal btn-close">&times;</button>
+        <h2 class="model__header">
+          Open your bank account <br />in just
+          <span class="highlight">5 minutes</span>
+        </h2>
+        <div class="login-form">
+          <form action="#">
+            <input
+              autofocus
+              type="text"
+              placeholder="Full Name"
+              class="input input-user"
+            />
+            <input
+              type="email"
+              placeholder="email address"
+              class="input input-password"
+            />
+            <button class="btn">Next step &rarr;</button>
+          </form>
+        </div>
+      </section>
+
+      <!--home-page -->
+      <header class="header"></header>
+
+      <div class="toast hidden">
+        <span class="btn-wrong">&times;</span>
+        somthing went wrong
+        <button class="close-toast">&times;</button>
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
+  </body>
+</html>
